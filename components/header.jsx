@@ -27,11 +27,11 @@ export default function Header() {
         {/* Logo */}
         <Link href="/" className="mr-10 md:mr-20">
           <Image
-            src="/logo-text.png"
-            alt="Pixxel Logo"
-            className="min-w-24 object-cover"
-            width={96}
-            height={24}
+            src="/ai image editor.png"
+            alt="ai image editor Logo"
+            className="min-w-15 object-cover"
+            width={70}
+            height={10}
           />
         </Link>
 

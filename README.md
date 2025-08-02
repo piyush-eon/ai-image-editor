@@ -1,28 +1,32 @@
-# Full Stack AI Image Editor with Next JS, Fabric.js, Tailwind, ImageKit, Shadcn UI Tutorial 🔥🔥
-## https://youtu.be/vr1JL6Fi6K4
-<img width="1470" alt="Landing Page" src="https://github.com/user-attachments/assets/749d1111-d638-4b3d-addb-f5f6a5fc691f" />
+# To start frentend server
+   npm run dev
 
-### Make sure to create a `.env` file with following variables -
+# To see data storage 
+   npx convex dev
 
-```
-# Deployment used by `npx convex dev`
-CONVEX_DEPLOYMENT=
+# what and all i have used , and how it work.
+ 1. API Routes (Next.js)
+You have custom API endpoints (like /api/imagekit/upload) that handle requests from your frontend. 
+# example:
+  When we upload an image, the frontend sends a POST request to your API route, which processes the image and interacts with ImageKit.
 
-NEXT_PUBLIC_CONVEX_URL=
+ 2. ImageKit Integration
+In the backend  it will use the ImageKit SDK(softwarebdevelopment kit) to upload images, generate URLs, and perform transformations (like background removal).
 
-NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
-CLERK_SECRET_KEY=
+ 3. Authentication
+ Clerk is used for user authentication. The backend checks if a user is logged in before allowing actions like uploading images ot editing.
 
-NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
-NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
+ 4. Convex Database
+ Convex is used for real-time data storage and retrieval. Your backend interacts with Convex for storing project data, user info,projects info etc.
 
-CLERK_JWT_ISSUER_DOMAIN=
+ 5. Third-party APIs(Unsplash)
+ For features like Unsplash image search, your backend uses API keys and fetches data from Unsplash.
+# Unsplash Example
 
-# Imagekit
-NEXT_PUBLIC_IMAGEKIT_PUBLIC_KEY=
-NEXT_PUBLIC_IMAGEKIT_URL_ENDPOINT=
-IMAGEKIT_PRIVATE_KEY=
+When you search for a background image in the editor, the frontend sends your search query to an API route. The backend uses the Unsplash API to fetch relevant images and returns them to the frontend, allowing you to select and apply them as backgrounds in your project or in ur image.
 
-# Unsplash
-NEXT_PUBLIC_UNSPLASH_ACCESS_KEY=
-```
+# fabric.js (it is a open-source javascript library)
+fabric.js is a powerful JavaScript library for working with HTML5 canvas. In my  project, it’s been used for image editing features such as adding, removing, and transforming images and other objects on the canvas.
+# the promat.txt is in public folder.
+
+--------------------------------- end ---------------------------------------
