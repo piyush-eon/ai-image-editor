@@ -1,3 +1,5 @@
+"use client";
+
 import { useIntersectionObserver } from "@/hooks/use-landing-hooks";
 import { useAuth } from "@clerk/nextjs";
 import { useState } from "react";
@@ -32,6 +34,7 @@ const PricingCard = ({
       }
     } catch (error) {
       console.error("Checkout error:", error);
+      toast.error("something went wrong" + error.message)
     }
   };
 
@@ -115,7 +118,7 @@ const PricingSection = () => {
         "AI Retouch, Upscaler and more",
       ],
       featured: true,
-      planId: "cplan_2ywZwXjYQQipWYxjCmFZCgCgsTZ",
+      planId: "cplan_30aK7pfTVuTc1KHbTPe6EID0LFr",
       buttonText: "Upgrade to Pro",
     },
   ];
