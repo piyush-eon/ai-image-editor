@@ -23,9 +23,9 @@ const HeroSection = () => {
         <div
           className={`transition-all duration-1000 ${textVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
         >
-          <h1 className="text-6xl md:text-9xl font-black mb-6 tracking-tight">
+          <h1 className="text-6xl md:text-8xl font-black mb-6 tracking-tight">
             <span className="bg-gradient-to-r from-blue-400 via-purple-500 to-cyan-400 bg-clip-text text-transparent animate-pulse">
-              Create
+              Create your images/edit
             </span>
             <br />
             <span className="text-white">Without Limits</span>
@@ -68,7 +68,7 @@ const HeroSection = () => {
                   <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
                   <div className="w-3 h-3 bg-green-500 rounded-full"></div>
                 </div>
-                <div className="text-gray-400 text-sm">Pixxel Pro</div>
+                <div className="text-gray-400 text-sm">ai image editor Pro</div>
               </div>
 
               <div className="grid grid-cols-4 gap-4 mb-6">
